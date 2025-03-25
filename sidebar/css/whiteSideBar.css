@@ -11,24 +11,7 @@ body {
 #sidebar {
     width: 250px;
     height: 1080px;
-    position: absolute;
-}
-
-#top-bar {
-    width: 1570px;
-    height: 100px;
-    position: absolute;
-    left: 250px; 
-    top: 0;
-}
-
-#top-bar-background {
-    width: 1570px;
-    height: 100px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid rgba(130, 135, 141, 0.05);
+    position: relative;
 }
 
 #sidebar-background {
@@ -37,6 +20,100 @@ body {
     position: absolute;
     background: white;
     border-right: 1px #A9A9A9 solid;
+}
+
+#top-bar {
+    width: 1570px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(159, 159, 159, 0.05);
+    z-index: 10;
+}
+
+#top-bar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(159, 159, 159, 0.05);
+    z-index: -1;
+}
+
+.menu-management {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-label {
+    color: #888888;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.page-title {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.announcement {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.announcement-text {
+    color: #FF435C;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.branch-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.branch-name {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.manager-info {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.manager-label {
+    color: #888888;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.manager-name {
+    color: #575757;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 #menu-container {
@@ -103,7 +180,7 @@ body {
 }
 
 #logo-main {
-    background: url('/img/logo\ 1.png');
+    background: url('/images/logo/logo 1.png');
     width: 120.96px;
     height: 99px;
     top: 3px;
@@ -111,7 +188,7 @@ body {
 }
 
 #logo-sub {
-    background: url('/img/logo2\ 1.png');
+    background: url('/images/logo/logo2 1.png');
     width: 132.35px;
     height: 53px;
     left: 115px;
