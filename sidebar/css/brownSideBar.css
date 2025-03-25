@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kakao OTF', sans-serif;
+}
+
+#sidebar {
+    width: 250px;
+    height: 1080px;
+    position: absolute;
+}
+
+#top-bar {
+    width: 1570px;
+    height: 100px;
+    position: absolute;
+    left: 250px; 
+    top: 0;
+}
+
+#top-bar-background {
+    width: 1570px;
+    height: 100px;
+    position: absolute;
+    background: #FFF8E7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(130, 135, 141, 0.05);
+}
+
+#sidebar-background {
+    width: 250px;
+    height: 1080px;
+    position: absolute;
+    background: #D6BB73;
+    border-right: 1px #A9A9A9 solid;
+}
+
+#menu-container {
+    width: 250px;
+    height: 954px;
+    left: 0;
+    top: 126px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    position: relative;
+    width: 248px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 18px;
+}
+
+.menu-text {
+    color: #1E1E1E;
+    font-size: 24px;
+    font-family: 'Kakao OTF', sans-serif;
+    font-weight: 700;
+    line-height: 33.6px;
+}
+
+.submenu {
+    position: relative;
+    left: 10px;
+}
+
+.submenu-item {
+    left: 60px;
+    width: 140px;
+    color: #1E1E1E;
+    font-size: 24px;
+    font-family: 'Kakao OTF', sans-serif;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+#order-menu {
+    background: #E4D3A4;
+}
+
+#order-text {
+    color: #EC9F23;
+}
+
+#logo {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+}
+
+#logo-main {
+    background: url('/img/logo\ 1.png');
+    width: 120.96px;
+    height: 99px;
+    top: 3px;
+    position: absolute;
+}
+
+#logo-sub {
+    background: url('/img/logo2\ 1.png');
+    width: 132.35px;
+    height: 53px;
+    left: 115px;
+    top: 25px;
+    position: absolute;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+}
