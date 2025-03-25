@@ -6,9 +6,10 @@ body{
 
 #Main {
     width: 100%;
-    height: 980px;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
     position: relative;
-    overflow: hidden
 }
 
 #Form {
