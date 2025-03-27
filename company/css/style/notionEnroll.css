@@ -1,154 +1,93 @@
 .div-wrapper {
-  width: 1570px;
-  height: 980px;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto;
   background-color: #fffceb;
-  border: 1px solid;
-  border-color: #000000;
 }
 
 .div-wrapper .overlap-group {
-  width: 1569px;
   height: 975px;
   background-image: url(./img/background-1.png);
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.div-wrapper .frame {
-  display: flex;
-  flex-direction: column;
-  width: 1407px;
-  align-items: flex-start;
-  gap: 5px;
-  position: relative;
-  top: 69px;
-  left: 80px;
-}
-
 .div-wrapper .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  flex-wrap: wrap;
+  width: 1404px;
+  align-items: flex-start;
+  gap: 42px 534px;
   position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  top: 63px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .div-wrapper .header {
   display: flex;
-  flex-wrap: wrap;
+  width: 1404px;
   align-items: flex-start;
-  justify-content: flex-end;
-  gap: 0px 727px;
+  justify-content: space-between;
   position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
   background-color: transparent;
 }
 
 .div-wrapper .title {
   position: relative;
-  width: 539px;
-  height: 78px;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-color: var(--linedarkgray);
-}
-
-.div-wrapper .text-wrapper {
-  position: absolute;
-  top: -3px;
-  left: 0;
-  font-family: var(--head-kakao-56px-font-family);
-  font-weight: var(--head-kakao-56px-font-weight);
-  color: var(--fontdeepyellow);
-  font-size: var(--head-kakao-56px-font-size);
-  letter-spacing: var(--head-kakao-56px-letter-spacing);
-  line-height: var(--head-kakao-56px-line-height);
-  white-space: nowrap;
-  font-style: var(--head-kakao-56px-font-style);
-}
-
-.div-wrapper .edit {
-  position: relative;
-  width: 100px;
-  height: 44px;
-  margin-top: -1.00px;
-  margin-right: -1.00px;
-  background-color: #fafbfd;
-  border-radius: 8px;
+  width: 720px;
+  height: 80px;
+  background-color: var(--inputgray);
+  border-radius: 10px;
   border: 1px solid;
-  border-color: var(--linelightgray);
+  border-color: var(--borderlightgray);
 }
 
-.div-wrapper .edit-in {
-  position: relative;
-  width: 1px;
-  height: 1px;
-  top: -1px;
-}
-
-.div-wrapper .delete {
-  display: flex;
-  width: 48px;
-  height: 44px;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
+.div-wrapper .title-name {
   position: absolute;
-  top: 0;
-  left: 50px;
-}
-
-.div-wrapper .delete-image {
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.div-wrapper .update {
-  display: flex;
-  width: 50px;
-  height: 44px;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-color: var(--fontlightgray);
-}
-
-.div-wrapper .pencil-write {
-  position: relative;
-  width: 26.98px;
-  height: 26.98px;
-}
-
-.div-wrapper .writer {
-  position: relative;
-  width: fit-content;
-  opacity: 0.9;
-  font-family: var(--head-kakao-20px-font-family);
-  font-weight: var(--head-kakao-20px-font-weight);
-  color: #202224;
-  font-size: var(--head-kakao-20px-font-size);
-  letter-spacing: var(--head-kakao-20px-letter-spacing);
-  line-height: var(--head-kakao-20px-line-height);
+  top: 17px;
+  left: 10px;
+  font-family: var(--title-kakao-32px-font-family);
+  font-weight: var(--title-kakao-32px-font-weight);
+  color: #000000;
+  font-size: var(--title-kakao-32px-font-size);
+  letter-spacing: var(--title-kakao-32px-letter-spacing);
+  line-height: var(--title-kakao-32px-line-height);
   white-space: nowrap;
-  font-style: var(--head-kakao-20px-font-style);
+  font-style: var(--title-kakao-32px-font-style);
+}
+
+.div-wrapper .enroll {
+  position: relative;
+  width: 150px;
+  height: 70px;
+  background-color: var(--inputgray);
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: var(--borderlightgray);
+}
+
+.div-wrapper .order-status {
+  position: absolute;
+  width: 150px;
+  height: 27px;
+  top: 20px;
+  left: 0;
+  font-family: "Nunito Sans-Bold", Helvetica;
+  font-weight: 700;
+  color: #202224;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .div-wrapper .content {
   position: relative;
-  align-self: stretch;
-  width: 100%;
+  width: 1404px;
   height: 732px;
-  background-color: #fcfcfc7a;
+  background-color: #f8f8f8;
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid;
@@ -178,12 +117,12 @@
   padding: 10px;
   position: absolute;
   top: 607px;
-  left: 1175px;
+  left: 1172px;
   background-color: var(--buttonprimary);
   border-radius: 10px;
 }
 
-.div-wrapper .div {
+.div-wrapper .text-wrapper {
   position: relative;
   width: fit-content;
   font-family: var(--head-kakao-32px-font-family);
@@ -194,17 +133,4 @@
   line-height: var(--head-kakao-32px-line-height);
   white-space: nowrap;
   font-style: var(--head-kakao-32px-font-style);
-}
-
-.div-wrapper .date {
-  position: relative;
-  align-self: stretch;
-  opacity: 0.9;
-  font-family: var(--head-kakao-20px-font-family);
-  font-weight: var(--head-kakao-20px-font-weight);
-  color: #202224;
-  font-size: var(--head-kakao-20px-font-size);
-  letter-spacing: var(--head-kakao-20px-letter-spacing);
-  line-height: var(--head-kakao-20px-line-height);
-  font-style: var(--head-kakao-20px-font-style);
 }
