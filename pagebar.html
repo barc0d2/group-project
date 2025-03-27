@@ -1,10 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      body{
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      #PageBar {
+          width: 1000px;
+          height: 37px;
+          left: 50%;
+          position: absolute;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+      }
+
+      #NextPage {
+          width: 36px;
+          height: 36px;
+          padding: 10px;
+          background: white;
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+          overflow: hidden;
+          border-radius: 8px;
+          outline: 1px #E8E8E8 solid;
+          outline-offset: -1px;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 8px;
+          display: inline-flex;
+      }
+
+      #NextPage > .Icon {
+          width: 20px;
+          height: 20px;
+          position: relative;
+      }
+
+      #NextPage > .Icon > .Icon {
+          width: 5.49px;
+          height: 9.31px;
+          left: 7.50px;
+          top: 5px;
+          position: absolute;
+          background: black;
+      }
+
+      #PrePage {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        background: white;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+        overflow: hidden;
+        border-radius: 8px;
+        outline: 1px #E8E8E8 solid;
+        outline-offset: -1px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        display: inline-flex;
+      }
+
+      #PrePage .Icon {
+        width: 20px;
+        height: 20px;
+        position: relative;
+      }
+
+      #PrePage .Icon .Icon {
+        width: 5.49px;
+        height: 9.31px;
+        left: 12.99px;
+        top: 14.31px;
+        position: absolute;
+        transform: rotate(-180deg);
+        transform-origin: top left;
+        background: black;
+      }
+
+      #PageBar > .Page {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        background: white;
+        border-radius: 6px;
+        outline: 1px #9E9E9E solid;
+        outline-offset: -1px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        text-align: center;
+      }
+
+      #PageBar > .Page > div {
+        color: black;
+        font-size: 24px;
+        font-family: Kakao OTF;
+        font-weight: 700;
+        line-height: 33.60px;
+        word-wrap: break-word;
+      }
+
+      #PageBar > .SelectPage {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        background: var(--Font-Brown, #FF9538);
+        border-radius: 6px;
+        outline: 1px #9E9E9E solid;
+        outline-offset: -1px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+      }
+
+      #PageBar > .SelectPage > div {
+        color: white;
+        font-size: 24px;
+        font-family: Kakao OTF;
+        font-weight: 700;
+        line-height: 33.60px;
+        word-wrap: break-word;
+      }
+
+      #PageBar .Page {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        background: white;
+        border-radius: 6px;
+        outline: 1px #9E9E9E solid;
+        outline-offset: -1px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        text-align: center;
+      }
+
+      #PageBar .Page div {
+        color: black;
+        font-size: 24px;
+        font-family: Kakao OTF;
+        font-weight: 700;
+        line-height: 33.60px;
+        word-wrap: break-word
+      }
+
+      #PageBar > .SelectPage {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        background: var(--Font-Brown, #FF9538);
+        border-radius: 6px;
+        outline: 1px #9E9E9E solid;
+        outline-offset: -1px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+      }
+
+      #PageBar > .SelectPage > div {
+        color: white;
+        font-size: 24px;
+        font-family: Kakao OTF;
+        font-weight: 700;
+        line-height: 33.60px;
+        word-wrap: break-word;
+      }
+    </style>
 </head>
 <body>
-$END$
+<div id="PageBar">
+  <div id="PrePage">
+    <div class="Icon">
+      <div class="Icon"></div>
+    </div>
+  </div>
+  <div class="Page">
+    <div>1</div>
+  </div>
+  <div class="Page">
+    <div>2</div>
+  </div>
+  <div class="SelectPage">
+    <div>3</div>
+  </div>
+  <div class="Page">
+    <div>4</div>
+  </div>
+  <div class="Page">
+    <div>5</div>
+  </div>
+  <div class="Page">
+    <div>6</div>
+  </div>
+  <div class="Page">
+    <div>7</div>
+  </div>
+  <div class="Page">
+    <div>8</div>
+  </div>
+  <div class="Page">
+    <div>9</div>
+  </div>
+  <div class="Page">
+    <div>10</div>
+  </div>
+  <div id="NextPage">
+    <div class="Icon">
+      <div class="Icon"></div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

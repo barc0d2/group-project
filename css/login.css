@@ -2,6 +2,7 @@ body{
     min-width: 100vh;
     margin:0;
     padding:0;
+    position: relative;
 }
 
 #frame{
@@ -9,22 +10,21 @@ body{
     min-height: 100vh;
     height: auto;
     overflow-y: auto;
-    position:relative;
+    position:absolute;
 }
 
 
 #frame .Background {
     width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
+    height: 100vh;
     opacity: 0.15;
     position: absolute;
 }
 
 #Main {
     width: 100%;
-    height: 1080px;
+    height: 100vh;
+
     left: 0px;
     top: 0px;
     position: absolute;
@@ -117,7 +117,7 @@ body{
 #Underlogo {
     width: 1045px;
     left: 74px;
-    top: 970.75px;
+    top: 85%;
     position: absolute;
     justify-content: flex-start;
     align-items: flex-start;
@@ -225,7 +225,7 @@ body{
 
 #underContent {
     left: 74px;
-    top: 896px;
+    top: 80%;
     position: absolute;
     color: var(--Color-4, #191919);
     font-size: 25.68px;
@@ -241,10 +241,11 @@ body{
     background-position:-600px;
     background-size: cover;
     position: absolute;
-    width: 688px;
-    height: 1016px;
+    width: 600px;
+    height: 90%;
     right: 20px;
-    top: 32px;
+    top: 50%;
+    transform: translateY(-50%);
     box-shadow: 0px 0px 43.900001525878906px -14px rgba(0, 0, 0, 0.20);
     border-radius: 21px;
 }

@@ -1,0 +1,102 @@
+.box {
+    width: 1921px;
+    height: 1080px;
+  }
+  
+  .box .overlay {
+    position: fixed;
+    width: 1921px;
+    height: 1080px;
+    top: 0;
+    left: 0;
+  }
+  
+  .box .overlap-group {
+    position: relative;
+    height: 1080px;
+  }
+  
+  .box .shadow {
+    position: absolute;
+    width: 1921px;
+    height: 1080px;
+    top: 0;
+    left: 0;
+    background-color: #cfcfcf;
+    opacity: 0.44;
+  }
+  
+  .box .toggle {
+    position: absolute;
+    width: 495px;
+    height: 410px;
+    top: 335px;
+    left: 712px;
+  }
+  
+  .box .background {
+    height: 410px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .box .form {
+    position: relative;
+    width: 419px;
+    height: 317px;
+    top: 47px;
+    left: 40px;
+  }
+  
+  .box .image {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    top: 0;
+    left: 168px;
+  }
+  
+  .box .content {
+    position: absolute;
+    width: 247px;
+    top: 146px;
+    left: 74px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    line-height: 24px;
+  }
+  
+  .box .title {
+    position: absolute;
+    width: 190px;
+    top: 96px;
+    left: 108px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000cc;
+    font-size: 24px;
+    letter-spacing: -0.46px;
+    line-height: 36px;
+  }
+  
+  .box .cancel {
+    position: absolute;
+    width: 197px;
+    height: 78px;
+    top: -5269px;
+    left: -2238px;
+  }
+  
+  .box .agree {
+    position: absolute;
+    width: 197px;
+    height: 78px;
+    top: -5269px;
+    left: -2019px;
+  }
+  
